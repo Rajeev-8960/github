@@ -14,7 +14,7 @@ const getuser = async(username) =>{
    const card = 
    `
        <div class="card">
-            <div>
+            <div>  
                 <img class="avatar" src="${data.avatar_url}" alt="Florin Pop">
             </div>
             <div class="user-info">
@@ -28,9 +28,6 @@ const getuser = async(username) =>{
                 </ul>
  
                 <div id="repos">
-                    // <a class="repo" href="#" target="_blank">Repo 1</a>
-                    // <a class="repo" href="#" target="_blank">Repo 2</a>
-                    // <a class="repo" href="#" target="_blank">Repo 3</a>
                 </div>
             </div>
         </div>
@@ -46,7 +43,7 @@ getuser("Rajeev_8960");
 
 const getRepos = async(username)=>{
     const repos = document.querySelector("#repos");
-    const res = await  fetch(APIURL + username + "/repos");
+    const res = await  fetch(APIURL + username  +"/repos");
     const data = await res.json();
     // console.log(data);
     data.forEach(
