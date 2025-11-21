@@ -41,7 +41,7 @@ getRepos(username);
 }
 
 //init call
-getuser("shreya1826");
+getuser("Rajeev_8960");
 
 
 const getRepos = async(username)=>{
